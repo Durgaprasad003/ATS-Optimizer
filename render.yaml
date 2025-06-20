@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: streamlit-gemini-app
-    env: python
-    buildCommand: "./build.sh && pip install -r requirements.txt"
-    startCommand: "streamlit run app.py"
-    envVars:
-      - key: GOOGLE_API_KEY
-        value: AIzaSyCXdvXaXvlPWomOv-5Tb8fEYQDqDZ5Mx9E
