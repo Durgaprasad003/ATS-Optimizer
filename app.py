@@ -16,7 +16,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Gemini model setup
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+model = genai.GenerativeModel(model_name="gemini-1.5-pro")
 
 def get_gemini_response(user_input, pdf_content, prompt):
     try:
